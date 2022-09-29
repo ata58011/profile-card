@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  background-color: hsl(185, 75%, 39%);
+  background-image: url(/images/bg-pattern-top.svg),
+    url(/images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: left -270px top -700px, right -200px top 500px;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main .main_background {
+  content: url(/images/bg-pattern-card.svg);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 400px;
+}
+
+main .avatar {
+  position: absolute;
+  top: 10vh;
+  left: 10vw;
+}
+
+main .avatar img {
+  border-radius: 50px;
+  border: 4px solid white;
+}
+
+main .personal {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 110px;
+  background-color: white;
+}
+
+main .personal ul {
+  display: flex;
+
+  column-gap: 15px;
+
+  padding-bottom: 50px;
+}
+
+main .personal ul li:nth-child(1) {
+  font-size: 20px;
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+}
+
+main .personal ul li:nth-child(2) {
+  color: hsl(227, 10%, 46%);
+}
+
+main .personal h4 {
+  position: absolute;
+  top: 270px;
+  right: 180px;
+}
+
+main .stats {
+  background-color: white;
+  padding: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 50px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+main .stats ul {
+  padding-right: 40px;
+  padding-left: 10px;
+}
+
+main .stats ul li:nth-child(1) {
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+main .stats ul li:nth-child(2) {
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+}
+
+@media all and (max-width: 375px) {
+  main {
+    width: 340px;
+    margin-right: 8px;
+    margin-left: 4px;
+  }
+  main .main_background {
+    width: 340px;
+  }
+  main .avatar {
+    left: 31vw;
+  }
+
+  main .personal ul {
+    padding-bottom: 90px;
+  }
+  main .personal h4 {
+    top: 225px;
+    right: 150px;
+  }
+
+  main .stats {
+    padding-top: 25px;
+  }
+
+  main .stats ul:nth-child(1) {
+    padding-left: 25px;
+  }
+  main .stats ul:nth-child(2) {
+  }
+}
